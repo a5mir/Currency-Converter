@@ -1,16 +1,16 @@
 package controller;
 
+import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.ListCell;
-import javafx.scene.control.TextField;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
+import javafx.scene.control.*;
+import main.Currency;
+import main.ImageCell;
+import main.ScrapingClass;
 
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class Controller implements Initializable {
@@ -24,30 +24,20 @@ public class Controller implements Initializable {
     @FXML
     private TextField fstValue, secValue;
 
+    Currency c = new Currency();
+
     private void createComboBox() {
-     firstCurrency.setCellFactory(listView -> new ListCell<String>(){
-         private ImageView imageView = new ImageView();
-         @Override
-         public void updateItem(String item, boolean empty) {
-             super.updateItem(item, empty);
-             if(empty) {
-                 setGraphic(null);
-             } else {
-                 String imageUrl = "/img/USD.gif";
-                 Image image = new Image(imageUrl, true);
-                 imageView.setImage(image);
-                 setGraphic(imageView);
-             }
-         }
-     });
-        firstCurrency.
-        firstCurrency.getItems().add("BAM");
+        firstCurrency.getItems().addAll();
+        firstCurrency.setCellFactory(listview -> new ImageCell());
+        firstCurrency.setButtonCell(new ImageCell());
     }
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-            createComboBox();
 
+        ScrapingClass sc = new ScrapingClass();
+        sc.populateList();
+        createComboBox();
     }
 
     public void handleConvertButton(ActionEvent actionEvent) {

@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2d5c0e7-345b-4841-b363-56bf15f3e738" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/view/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/jsoup_1_13_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Currency.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ImageCell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ScrapingClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Currency-Converter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Currency-Converter.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Currency-Converter/controller/Controller$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Currency-Converter/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Currency-Converter/controller/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Currency-Converter/img/USD.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Currency-Converter/view/view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Currency-Converter/view/view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/USD.gif" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/view.fxml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,6 +39,10 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/jsoup-1.13.1.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -71,6 +84,7 @@
       <option name="presentableId" value="Default" />
       <updated>1605640536293</updated>
       <workItem from="1605640539156" duration="5064000" />
+      <workItem from="1606065867410" duration="9803000" />
     </task>
     <servers />
   </component>
@@ -82,7 +96,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
