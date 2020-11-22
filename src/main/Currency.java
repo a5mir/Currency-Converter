@@ -7,7 +7,6 @@ public class Currency {
     private String name;
     private double spot;
     private String image;
-    private ArrayList<Currency> list;
 
     public Currency() {
     }
@@ -42,11 +41,4 @@ public class Currency {
         this.image = image;
     }
 
-    public ArrayList<Currency> getList() {
-        return list;
-    }
-
-    public void setList(ArrayList<Currency> list) {
-        this.list = list;
-    }
 }
