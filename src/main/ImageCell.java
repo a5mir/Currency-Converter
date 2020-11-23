@@ -30,7 +30,11 @@ public class ImageCell extends ListCell<String> {
     private ImageView getImageView(String imageName) {
         ImageView imageView = null;
         if (!pictures.containsKey(imageName)){
-            pictures.put(imageName, new Image("https://www.ecb.europa.eu/shared/img/flags/"+imageName+".gif"));
+            if(imageName=="EUR"){
+                pictures.put(imageName, new Image("main/EUR.png"));
+            } else {
+                pictures.put(imageName, new Image("https://www.ecb.europa.eu/shared/img/flags/" + imageName + ".gif"));
+            }
         }
         imageView = new ImageView(pictures.get(imageName));
         return imageView;

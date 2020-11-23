@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="c2d5c0e7-345b-4841-b363-56bf15f3e738" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Currency-Converter/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Currency-Converter/controller/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Currency-Converter/view/view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Currency-Converter/view/view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Currency-Converter/main/ImageCell.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Currency-Converter/main/ImageCell.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Currency-Converter/main/ScrapingClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Currency-Converter/main/ScrapingClass.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Currency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Currency.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/ImageCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ImageCell.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/ScrapingClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ScrapingClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/view.fxml" afterDir="false" />
@@ -38,6 +37,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.notifications" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -79,7 +79,8 @@
       <option name="presentableId" value="Default" />
       <updated>1605640536293</updated>
       <workItem from="1605640539156" duration="5064000" />
-      <workItem from="1606065867410" duration="13193000" />
+      <workItem from="1606065867410" duration="13438000" />
+      <workItem from="1606162013836" duration="3975000" />
     </task>
     <servers />
   </component>

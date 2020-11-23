@@ -1,8 +1,5 @@
 package controller;
 
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -13,8 +10,6 @@ import javafx.scene.control.TextField;
 import main.Currency;
 import main.ImageCell;
 import main.ScrapingClass;
-
-import java.awt.*;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
@@ -34,7 +29,7 @@ public class Controller implements Initializable {
     private Label firstLabel;
 
     ArrayList<String> imageList = new ArrayList<>();
-
+    ScrapingClass sc = new ScrapingClass();
 
     private void createComboBox() {
         firstCurrency.getItems().addAll(imageList);
@@ -45,10 +40,8 @@ public class Controller implements Initializable {
         secondCurrency.setButtonCell(new ImageCell());
     }
 
-
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        ScrapingClass sc = new ScrapingClass();
         sc.populateList();
         for(Currency c:sc.list){
             imageList.add(c.getImage());
@@ -57,7 +50,38 @@ public class Controller implements Initializable {
     }
 
     public void handleConvertButton(ActionEvent actionEvent) {
+        if(firstCurrency.getSelectionModel().getSelectedItem().equals("EUR")){
+            for(Currency c : sc.list){
+                if(c.getImage().equals(secondCurrency.getSelectionModel().getSelectedItem())){
+                    double primValue = Double.parseDouble(fstValue.getText());
+                    double primSpot = c.getSpot();
+                    secValue.setText(String.valueOf(primValue/primSpot));
+                    break;
+                }
+            }
+        } else if(secondCurrency.getSelectionModel().getSelectedItem().equals("EUR")){
+            for(Currency c : sc.list){
+                if(c.getImage().equals(firstCurrency.getSelectionModel().getSelectedItem())){
+                    double primValue = Double.parseDouble(secValue.getText());
+                    double primSpot = c.getSpot();
+                    fstValue.setText(String.valueOf(primValue*primSpot));
+                    break;
+                }
+            }
+        }
+
     }
 
 
+    public void actionPerformedFirst(ActionEvent actionEvent) {
+        if(!firstCurrency.getSelectionModel().getSelectedItem().equals("EUR")){
+            secondCurrency.getSelectionModel().select(0);
+        }
+    }
+
+    public void actionPerformedSecond(ActionEvent actionEvent) {
+        if(!secondCurrency.getSelectionModel().getSelectedItem().equals("EUR")){
+            firstCurrency.getSelectionModel().select(0);
+        }
+    }
 }

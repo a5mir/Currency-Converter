@@ -19,6 +19,7 @@ public class ScrapingClass {
         try {
             final Document document = Jsoup.connect(url).get();
             String[] li = new String[3];
+            list.add(new Currency("EUR", 1, "EUR"));
             for (Element row : document.select("table.ecb-forexTable.fullWidth tr")){
                 if(!row.select("td.currency").text().equals("") ) {
                     final String image = row.select("td.currency").text();
