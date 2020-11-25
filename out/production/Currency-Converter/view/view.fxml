@@ -11,8 +11,8 @@
    <children>
       <TextField fx:id="fstValue" layoutX="125.0" layoutY="101.0" prefHeight="31.0" prefWidth="250.0" />
       <Button fx:id="convertButton" layoutX="225.0" layoutY="253.0" mnemonicParsing="false" onAction="#handleConvertButton" prefWidth="150.0" text="CONVERT" />
-      <TextField fx:id="secValue" layoutX="125.0" layoutY="169.0" prefHeight="31.0" prefWidth="250.0" />
       <ComboBox fx:id="firstCurrency" layoutX="385.0" layoutY="101.0" onAction="#actionPerformedFirst" prefWidth="110.0" />
       <ComboBox fx:id="secondCurrency" layoutX="385.0" layoutY="169.0" onAction="#actionPerformedSecond" prefWidth="110.0" />
+      <Label fx:id="secValue" layoutX="125.0" layoutY="169.0" prefHeight="31.0" prefWidth="250.0" styleClass="secLabel" />
    </children>
 </AnchorPane>

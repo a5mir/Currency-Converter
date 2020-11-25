@@ -3,11 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="c2d5c0e7-345b-4841-b363-56bf15f3e738" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Currency-Converter/main/ImageCell.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Currency-Converter/main/ImageCell.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Currency-Converter/main/ScrapingClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Currency-Converter/main/ScrapingClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Currency-Converter/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Currency-Converter/controller/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Currency-Converter/view/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Currency-Converter/view/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Currency-Converter/view/view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Currency-Converter/view/view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ImageCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ImageCell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ScrapingClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ScrapingClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/view.fxml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -81,6 +81,8 @@
       <workItem from="1605640539156" duration="5064000" />
       <workItem from="1606065867410" duration="13438000" />
       <workItem from="1606162013836" duration="3975000" />
+      <workItem from="1606308748027" duration="1535000" />
+      <workItem from="1606337502270" duration="3113000" />
     </task>
     <servers />
   </component>

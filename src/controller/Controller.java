@@ -23,10 +23,11 @@ public class Controller implements Initializable {
     private Button convertButton;
 
     @FXML
-    private TextField fstValue, secValue;
+    private TextField fstValue;
+
 
     @FXML
-    private Label firstLabel;
+    private Label firstLabel, secValue;
 
     ArrayList<String> imageList = new ArrayList<>();
     ScrapingClass sc = new ScrapingClass();
@@ -42,34 +43,47 @@ public class Controller implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        sc.populateList();
+                sc.populateList();
         for(Currency c:sc.list){
             imageList.add(c.getImage());
         }
         createComboBox();
+        firstCurrency.getSelectionModel().select(0);
+        secondCurrency.getSelectionModel().select(1);
     }
 
     public void handleConvertButton(ActionEvent actionEvent) {
-        if(firstCurrency.getSelectionModel().getSelectedItem().equals("EUR")){
-            for(Currency c : sc.list){
-                if(c.getImage().equals(secondCurrency.getSelectionModel().getSelectedItem())){
-                    double primValue = Double.parseDouble(fstValue.getText());
-                    double primSpot = c.getSpot();
-                    secValue.setText(String.valueOf(primValue/primSpot));
-                    break;
-                }
-            }
-        } else if(secondCurrency.getSelectionModel().getSelectedItem().equals("EUR")){
-            for(Currency c : sc.list){
-                if(c.getImage().equals(firstCurrency.getSelectionModel().getSelectedItem())){
-                    double primValue = Double.parseDouble(secValue.getText());
-                    double primSpot = c.getSpot();
-                    fstValue.setText(String.valueOf(primValue*primSpot));
-                    break;
-                }
-            }
-        }
+        String fValue = fstValue.getText();
+        String fCur = firstCurrency.getSelectionModel().getSelectedItem();
+        String sCur = secondCurrency.getSelectionModel().getSelectedItem();
+        double value;
 
+        try {
+            value = Double.parseDouble(fValue);
+        }catch (NumberFormatException ex){
+           value = 0;
+        }
+        System.out.println(value);
+
+        if(value != 0){
+            if(fCur.equals("EUR")){
+                for(Currency c : sc.list){
+                    if(c.getImage().equals(sCur)){
+                        secValue.setText(String.valueOf(value/c.getSpot()));
+                        System.out.println(c.getSpot());
+                    }
+                }
+            } else {
+                for(Currency c : sc.list){
+                    if(c.getImage().equals(fCur)){
+                        secValue.setText(String.valueOf(value*c.getSpot()));
+                        System.out.println(c.getSpot());
+                    }
+                }
+            }
+        } else {
+            secValue.setText("ERROR");
+        }
     }
 
 
